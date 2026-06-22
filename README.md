@@ -10,6 +10,10 @@ Cold Air is an Arabic-only RTL web platform for HVAC and refrigeration companies
 - Customer accounts for profile, orders, invoices, contracts, service history, and installed devices.
 - ERP dashboard for roles, branches, customers, devices, maintenance records, orders, technicians, contracts, renewals, invoices, inventory, suppliers, financial reports, coupons, analytics, files, and audit logs.
 
+## Frontend and Backend Status
+
+The project includes both frontend and backend foundations. The frontend covers the Arabic RTL public website, store, projects, customer account entry, service pages, and ERP dashboard shell. The backend covers API route foundations, authentication helpers, RBAC, security middleware, and the Prisma/PostgreSQL schema. See `docs/frontend-backend-status.md` for the precise implementation status and remaining production work.
+
 ## Development
 
 ```bash
