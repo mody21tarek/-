@@ -1,0 +1,3 @@
+import { services } from '@/lib/data';import { PublicNav } from '@/components/PublicNav';
+export function generateStaticParams(){return services.map(([slug])=>({slug}))}
+export default function ServicePage({params}:{params:{slug:string}}){const item=services.find(([s])=>s===params.slug);return <><PublicNav/><main className="section"><div className="container card"><p className="kicker">خدمات Cold Air</p><h1>{item?.[1]??'خدمة'}</h1><p className="muted">{item?.[2]??'تفاصيل الخدمة'}</p><h2>ما يشمله الطلب</h2><ul><li>استقبال بيانات العميل والموقع والجهاز.</li><li>تحديد موعد مفضل وإرفاق صور.</li><li>إسناد لفني وتتبع حالة الطلب حتى الإغلاق.</li></ul><a className="btn" href="/#booking">اطلب الخدمة</a></div></main></>}

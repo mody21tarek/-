@@ -1,0 +1,2 @@
+import { PublicNav } from '@/components/PublicNav';import { products } from '@/lib/data';
+export default function Store(){return <><PublicNav/><main className="section"><div className="container"><h1>المتجر</h1><p className="muted">فئات، علامات تجارية، بحث، فلترة، سلة، دفع نقدي أو فودافون كاش أو إنستا باي.</p><div className="grid grid-3">{products.map((p,i)=><div className="card" key={p}><h3>{p}</h3><p>المخزون: {20-i*3}</p><p className="muted">معرض صور، مواصفات، تقييمات، ومنتجات مرتبطة.</p><button className="btn">أضف للسلة</button></div>)}</div></div></main></>}

@@ -1,0 +1,2 @@
+import { PublicNav } from '@/components/PublicNav';
+export default function Projects(){return <><PublicNav/><main className="section"><div className="container"><h1>المشروعات</h1><div className="grid grid-3">{['غرفة تبريد هايبر ماركت','نظام VRF إداري','صيانة فندق'].map((p,i)=><article className="card" key={p}><h3>{p}</h3><p className="muted">الفئة: {i===0?'غرف تبريد':'تكييف'} · نوع العميل: تجاري · تاريخ الإنجاز: 2026</p><p>وصف تفصيلي وصور قابلة للإدارة من لوحة التحكم.</p></article>)}</div></div></main></>}
