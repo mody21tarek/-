@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function PublicNav(){return <nav className="nav"><div className="container nav-inner"><Link className="brand" href="/">Cold Air</Link><div className="links"><Link href="/services/maintenance">الخدمات</Link><Link href="/store">المتجر</Link><Link href="/projects">المشروعات</Link><Link href="/account">حسابي</Link><Link className="btn" href="/#booking">طلب خدمة</Link></div></div></nav>}
